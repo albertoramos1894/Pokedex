@@ -1,0 +1,44 @@
+###
+POST http://127.0.0.1:9000/api/usuario HTTP/1.1
+Content-Type: application/json
+
+{
+    "nick": "mesr99",
+    "nombre": "Miguel ",
+    "edad": 23,
+    "region": "kanto",
+    "rol": 2,
+    "password":""
+}
+
+###
+GET http://127.0.0.1:9000/api/usuarios HTTP/1.1
+
+###
+GET http://127.0.0.1:9000/api/usuario HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id":"62fd11d5ef5354c25ab8a675"
+}
+
+###
+PUT http://127.0.0.1:9000/api/usuario/62fd0a3fffd676d726f4f21e HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": "62fd0a3fffd676d726f4f21e",
+    "nick": "rojo",
+    "nombre": "Satoshi",
+    "edad": 12,
+    "region": "kanto",
+    "rol": 1,
+    "password":""
+}
+###
+DELETE http://127.0.0.1:9000/api/usuario/62fd2ccc2bb7488a10797ebf HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": "62fd0a3fffd676d726f4f21e"
+}
