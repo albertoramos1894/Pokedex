@@ -1,0 +1,2 @@
+correr el proyecto sobre la ruta del proyecto con el comando:
+npm run start

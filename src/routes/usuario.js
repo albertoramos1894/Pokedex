@@ -13,8 +13,7 @@ router.post('/usuario', (req,res) => {
     request.get(`https://pokeapi.co/api/v2/pokemon/charmander`, (error,response,body) =>{
         if(error){
             return console.log(error);
-        }
-        console.log(body);
+        }        
         usuario.pokemon = body;
     });  
     usuario.save()
@@ -93,8 +92,5 @@ router.delete('/usuario/:id', (req,res) => {
     })
     .catch((error)=> res.json({ message: error }));
 });
-
-
-
 
 module.exports = router;
